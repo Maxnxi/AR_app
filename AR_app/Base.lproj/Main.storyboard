@@ -13,12 +13,21 @@
                     <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="KVM-8w-9tA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3Jc-ot-UYs" appends="YES" id="wWv-sw-ZYR"/>
+                        </connections>
                     </arView>
                     <connections>
                         <outlet property="arView" destination="KVM-8w-9tA" id="tza-il-4XB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3Jc-ot-UYs">
+                    <connections>
+                        <action selector="oniTap:" destination="BYZ-38-t0r" id="rwD-hr-WUH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="138" y="134"/>
         </scene>

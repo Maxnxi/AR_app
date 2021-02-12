@@ -13,6 +13,8 @@
 		05D9515225D5A6DE006E279C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05D9515025D5A6DE006E279C /* Main.storyboard */; };
 		05D9515425D5A6DF006E279C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D9515325D5A6DF006E279C /* Assets.xcassets */; };
 		05D9515725D5A6DF006E279C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05D9515525D5A6DF006E279C /* LaunchScreen.storyboard */; };
+		05D9516825D66A8E006E279C /* 01.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 05D9516725D66A8E006E279C /* 01.usdz */; };
+		05D9516B25D66AB0006E279C /* 02.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 05D9516A25D66AB0006E279C /* 02.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		05D9515325D5A6DF006E279C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05D9515625D5A6DF006E279C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05D9515825D5A6DF006E279C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D9516725D66A8E006E279C /* 01.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 01.usdz; sourceTree = "<group>"; };
+		05D9516A25D66AB0006E279C /* 02.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 02.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,9 @@
 			children = (
 				05D9516125D5ADF9006E279C /* Controller */,
 				05D9514A25D5A6DE006E279C /* AppDelegate.swift */,
+				05D9516725D66A8E006E279C /* 01.usdz */,
+				05D9516A25D66AB0006E279C /* 02.usdz */,
 				05D9514E25D5A6DE006E279C /* Experience.rcproject */,
-				05D9516425D5B342006E279C /* textures */,
 				05D9515025D5A6DE006E279C /* Main.storyboard */,
 				05D9515325D5A6DF006E279C /* Assets.xcassets */,
 				05D9515525D5A6DF006E279C /* LaunchScreen.storyboard */,
@@ -74,13 +79,6 @@
 				05D9514C25D5A6DE006E279C /* ARVC.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		05D9516425D5B342006E279C /* textures */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				05D9515725D5A6DF006E279C /* LaunchScreen.storyboard in Resources */,
+				05D9516825D66A8E006E279C /* 01.usdz in Resources */,
 				05D9515425D5A6DF006E279C /* Assets.xcassets in Resources */,
 				05D9515225D5A6DE006E279C /* Main.storyboard in Resources */,
+				05D9516B25D66AB0006E279C /* 02.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
