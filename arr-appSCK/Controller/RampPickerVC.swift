@@ -31,6 +31,8 @@ class RampPickerVC: UIViewController {
         view.insertSubview(sceneView, at: 0)
         
         preferredContentSize = size
+        view.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        view.layer.borderWidth = 0.3
         
         let scene = SCNScene(named: "art.scnassets/ramps.scn")!
         sceneView.scene = scene
