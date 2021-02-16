@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		0576B2BC25D6C629002CB449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576B2BB25D6C629002CB449 /* AppDelegate.swift */; };
 		0576B2BE25D6C629002CB449 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0576B2BD25D6C629002CB449 /* art.scnassets */; };
-		0576B2C025D6C629002CB449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576B2BF25D6C629002CB449 /* ViewController.swift */; };
+		0576B2C025D6C629002CB449 /* RampPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576B2BF25D6C629002CB449 /* RampPlacerVC.swift */; };
 		0576B2C325D6C629002CB449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0576B2C125D6C629002CB449 /* Main.storyboard */; };
 		0576B2C525D6C62C002CB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0576B2C425D6C62C002CB449 /* Assets.xcassets */; };
 		0576B2C825D6C62C002CB449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0576B2C625D6C62C002CB449 /* LaunchScreen.storyboard */; };
+		0576B2D325D6C74E002CB449 /* Ramp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576B2D225D6C74E002CB449 /* Ramp.swift */; };
+		0576B2D725D6C89F002CB449 /* RampPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576B2D625D6C89F002CB449 /* RampPickerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0576B2B825D6C629002CB449 /* arr-appSCK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arr-appSCK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0576B2BB25D6C629002CB449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0576B2BD25D6C629002CB449 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		0576B2BF25D6C629002CB449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0576B2BF25D6C629002CB449 /* RampPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPlacerVC.swift; sourceTree = "<group>"; };
 		0576B2C225D6C629002CB449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0576B2C425D6C62C002CB449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0576B2C725D6C62C002CB449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0576B2C925D6C62C002CB449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0576B2D225D6C74E002CB449 /* Ramp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ramp.swift; sourceTree = "<group>"; };
+		0576B2D625D6C89F002CB449 /* RampPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPickerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		0576B2BA25D6C629002CB449 /* arr-appSCK */ = {
 			isa = PBXGroup;
 			children = (
-				0576B2BB25D6C629002CB449 /* AppDelegate.swift */,
+				0576B2D125D6C741002CB449 /* Model */,
+				0576B2D025D6C736002CB449 /* Controller */,
 				0576B2BD25D6C629002CB449 /* art.scnassets */,
-				0576B2BF25D6C629002CB449 /* ViewController.swift */,
 				0576B2C125D6C629002CB449 /* Main.storyboard */,
+				0576B2BB25D6C629002CB449 /* AppDelegate.swift */,
 				0576B2C425D6C62C002CB449 /* Assets.xcassets */,
 				0576B2C625D6C62C002CB449 /* LaunchScreen.storyboard */,
 				0576B2C925D6C62C002CB449 /* Info.plist */,
 			);
 			path = "arr-appSCK";
+			sourceTree = "<group>";
+		};
+		0576B2D025D6C736002CB449 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0576B2BF25D6C629002CB449 /* RampPlacerVC.swift */,
+				0576B2D625D6C89F002CB449 /* RampPickerVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0576B2D125D6C741002CB449 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0576B2D225D6C74E002CB449 /* Ramp.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0576B2C025D6C629002CB449 /* ViewController.swift in Sources */,
+				0576B2D725D6C89F002CB449 /* RampPickerVC.swift in Sources */,
+				0576B2D325D6C74E002CB449 /* Ramp.swift in Sources */,
+				0576B2C025D6C629002CB449 /* RampPlacerVC.swift in Sources */,
 				0576B2BC25D6C629002CB449 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
